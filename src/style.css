@@ -1,5 +1,47 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
     background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#generate-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#generate-btn:hover {
+    background-color: #218838;
+}
+
+#excuse {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
 }
