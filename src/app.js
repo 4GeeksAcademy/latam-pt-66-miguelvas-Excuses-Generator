@@ -20,8 +20,4 @@ window.onload = () => {
         const display = document.getElementById('excuse');
         display.textContent = excuse;
     });
-
-    console.log(getRandomExcuse());
-    
-    const excuses = [];
 };
