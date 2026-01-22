@@ -1,11 +1,10 @@
-window.onload = () => {
-    const button = document.getElementById('generate-btn');
+const button = document.getElementById('generate-btn');
 
     let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
     let action = ['ate', 'peed', 'crushed', 'broke'];
     let what = ['my homework', 'my phone', 'the car'];
     let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
-
+    
     const getRandomExcuse = () => {
         const randomWho = who[Math.floor(Math.random() * who.length)];
         const randomAction = action[Math.floor(Math.random() * action.length)];
@@ -14,6 +13,11 @@ window.onload = () => {
         
         return `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}.`;
     };
+
+window.onload = () => {
+
+    let excuseDefault = document.querySelector('#excuse');
+    excuseDefault.innerText =getRandomExcuse();
 
     button.addEventListener('click', () => {
         const excuse = getRandomExcuse();
